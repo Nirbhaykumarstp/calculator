@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #080606;
+}
+
+.box {
+    height: 50vh;
+    width: 30vw;
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    background-color: #0a080c;
+}
+
+.innerbox {
+    height: 100%;
+    width: 65%;
+    border: 3px solid #FF5722;
+    background-color: #434343;
+    border-radius: 2%;
+}
+
+.screen {
+    height: 25%;
+    width: 100%;
+    border: 0px solid black;
+    display: inline-block;
+    background-color: rgb(34, 28, 28);
+    border-radius: 2%;
+}
+
+.linebreak {
+    height: 1px;
+    width: 40%;
+    background-color: red;
+}
+
+.keypad {
+    height: 65%;
+    width: 98%;
+    border: 2px solid black;
+    background-color: #141111;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+    row-gap: 5%;
+    column-gap: 5%;
+    justify-content: center;
+}
+
+.keypad .number {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(19, 16, 16);
+    border-radius: 25%;
+    background-color: black;
+    color: beige;
+    /* color: rgb(55, 224, 55); */
+}
+
+.number:hover {
+    background-color: rgb(37, 37, 37);
+}
