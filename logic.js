@@ -10,7 +10,8 @@ let expression="";
 let arr=[]
 btn.forEach(btn=>{
   btn.addEventListener("click",()=> {
-    expression=btn.innerText
+    expression=expression+btn.innerText
+    screen.innerText=expression
     console.log(expression)
   })
 })
