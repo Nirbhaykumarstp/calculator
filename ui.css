@@ -11,13 +11,14 @@ body {
 
 .box {
     height: 50vh;
-    width: 30vw;
+    width: 50%;
     border: 3px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25vh;
     background-color: #0a080c;
+    border-radius: 5%;
 }
 
 .innerbox {
