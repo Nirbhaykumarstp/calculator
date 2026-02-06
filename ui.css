@@ -7,16 +7,17 @@ body {
     display: flex;
     justify-content: center;
     background-color: #080606;
+    position:relative;
+    top: 150px;
 }
 
 .box {
     height: 50vh;
-    width: 50%;
+    width: 40%;
     border: 3px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
     background-color: #0a080c;
     border-radius: 5%;
 }

@@ -7,12 +7,35 @@ screen.style.textAlign = "right"
 
 let btn = document.querySelectorAll(".number")
 let expression="";
+let value=""
 let arr=[]
+function evaluate(expression){
+  let numberstring=expression;
+  for(let i=0;i<=length.numberstring;i++){
+    if(numberstring[i]=="+"){
+      let parts=numberstring.split(numberstring[i],2);
+      console.log(parts);
+    }
+  }
+  // for(let i=0;i<=length.numberstring;i++)
+  // {
+  //     if(i=="+")
+  //     {
+  //       let parts=numberstring.split("+",2)
+  //       console.log(parts[0],parts[1])
+  //     }
+  //   }
+
+}
 btn.forEach(btn=>{
   btn.addEventListener("click",()=> {
     expression=expression+btn.innerText
     screen.innerText=expression
-    console.log(expression)
+    if(btn.innerText=="="){
+      screen.innerText=""
+      evaluate(expression)
+    }
+    
   })
 })
 
